@@ -1,0 +1,26 @@
+.field{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+}
+.field1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+.field2{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+}
+.field3{
+    background-color: yellowgreen;
+    height: 200px;
+    width: 200px;
+}
+.field4{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,189 @@
+h1{
+    color: blueviolet;
+    background-color: greenyellow;  
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+h3{
+    color: yellow;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    
+}
+div{
+    display: flex;
+    flex-direction: column;   
+}
+
+#increment-btn{
+    padding: 10px 0 10px 0;
+    margin: 0 200px 0 200px;
+    background-color: firebrick;
+    color: yellow;
+}
+
+#save-btn{
+    padding: 10px 0 10px 0;
+    margin: 0 200px 0 200px;
+    background-color: green;
+    color: yellow;
+}
+
+#save-el{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: orange;
+    background-color: grey;
+    padding: 10px;
+}
+
+#line{
+    border-bottom: 2px solid black;
+}
+
+#shoes{
+    font-weight: bolder;
+    color: red;
+}
+
+#shoes-btn{
+    padding: 10px 0 10px 0;
+    margin: 0 200px 0 200px;
+    border-radius: 20px;
+}
+
+#shoe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#error{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#add, #multiply, #subtract, #divide{
+    padding: 10px 10px;
+    margin: 0 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#num{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+#num1, #num2{
+    font-size: 30px;
+}
+
+#sum{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 4;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#div{
+    background-color: darkgreen;
+    height: 400px;
+}
+.head{
+    background-color: darkgreen;
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+}
+.para{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+}
+.game-btn{
+    background-color: goldenrod;
+    color: darkgreen;
+    padding: 10px;
+    margin: 10px 240px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+#player-el{
+    color: goldenrod;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+#input-div{
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    min-width: 400px;
+}
+#input-el{
+    height: 30px;
+    margin-bottom: 2px;
+    border-color: greenyellow;
+}
+#button{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+#input-btn{
+    width: 100px;
+    margin: 2px;
+    height: 40px;
+    border: 1px solid greenyellow;
+    color: white;
+    background-color: greenyellow;
+}
+#tab-btn{
+    width: 100px;
+    margin: 2px;
+    height: 40px;
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    background-color: white;
+    font-weight: 700;
+}
+#del-btn{
+    width: 100px;
+    margin: 2px;
+    height: 40px;
+    border: 1px solid greenyellow;
+    color: white;
+    background-color: greenyellow;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+li{
+    margin-top: 5px;
+}
+li a{
+    color: greenyellow;
+}

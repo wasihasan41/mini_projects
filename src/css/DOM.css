@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(67, 61, 61);
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: cursive;
+    color: rgb(10, 237, 150);
+    margin-bottom: 120px;
+}
+.players{
+    display: flex;
+}
+.player1{
+    margin: 0 auto 0 auto;
+    font-size: xx-large;
+    color: rgb(10, 237, 150);
+}
+.player2{
+    margin: 0 auto 0 auto;
+    font-size: xx-large;
+    color: rgb(10, 237, 150);
+}
+.dices{
+    display: flex;
+}
+.dice1{
+    margin: 20px auto 0 auto;
+}
+.dice2{
+    margin: 20px auto 0 auto;
+}
+p{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 150px;
+    font-size: larger;
+}
+.dotOne{
+    height: 20px;
+}
+.dotTwo{
+    height: 20px;
+}
+.height{
+    height: 120px
+}

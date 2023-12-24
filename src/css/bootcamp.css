@@ -1,0 +1,29 @@
+img{
+    border-radius: 50%;
+    height:250px;
+    width:250px;
+}
+body{
+    background-color: #c0f3f3;
+}
+p{
+    font-family: 'phantom Fingers';
+    letter-spacing: 3px;
+}
+hr{
+    border-color: rgb(130, 117, 117);
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 6px;
+    width: 5%;
+}
+.heading{
+    color: #66BFBF;
+}
+.anchor{
+    color: #66BFBF;
+    text-decoration: 2px overline #66BFBF;
+}
+.anchor:hover{
+    color: red;
+}

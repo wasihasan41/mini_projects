@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey_1</title>
+    <link rel="stylesheet" href="/src/css/journey_1.css">
+    <style>
+        #head{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+    <p>adil</p>
+    <!-- lorem10 for 10 dummy text -->
+    Lorem ipsum dolor sit  <i>this is italic</i> amet consectetur adipisicing elit. Ipsum, quo dolore! Deleniti vel <strong>this is strong</strong> vero temporibus quisquam <b>this is bold</b>  dolores assumenda <em>this is emphasis</em> necessitatibus! Neque! 
+    <hr>
+    <!-- ctrl + enter to jump into line -->
+    <p>hello <br>  this is my second line</p>
+    <h2>Anchor</h2>
+    <!-- anchor <a> tag used if we want to add any link in our website -->
+    <a href="https://google.com" target="_blank">go to google</a><br>
+    <a href="https://facebook.com" target="_blank">go to facebook</a><br>
+    <a href="https://twitter.com" target="_blank">go to twitter</a><br>
+    <a href="https://linkedin.com" target="_blank">go to linkedin</a><br>
+    <a href="/src/html/clg_vid.html" target="_blank">go to clg_vid</a><br>
+    <h2>Image</h2>
+    <!-- when image is not prsent hence alt text is shown -->
+    <img src="adil.jpg" alt="Error" ><br>
+    <img src="/assets/miscellaneous/house.jpeg" alt="Error"><br>
+    <h2>List</h2>
+    <ul type="square">
+        <li>apple</li>
+        <li>mango</li>
+        <li>orange</li>
+    </ul>
+    <ol type="i">
+        <li>brinjal</li>
+        <ul type="disc">
+            <li>bharta</li>
+            <li>kalonji</li>
+        </ul>
+        <li>onion</li>
+        <li>tomato</li>
+    </ol>
+    <h2> Table</h2>
+    <table>
+        <thead>
+            <tr> <!-- row / horizontal view-->
+                <th>name</th>
+                <th>id</th>
+                <th>role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>rohan</td><!--table data-->
+                <td>526</td>
+                <td>backe-ned developer</td>
+            </tr>
+            <tr>
+                <td>ayush</td>
+                <td>782</td>
+                <td>front-end developer</td>
+            </tr>
+            <tr>
+                <td>abhishek</td>
+                <td>891</td>
+                <td>full-stack developer</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <h2>Form</h2>
+    <form action="clg_vid.html">
+        Name : <input type="text" name="myName"><br>
+        Email : <input type="email" name="myEmail"><br>
+        Date : <input type="date" name="myDate"><br>
+        Number : <input type="number" name="myNumber"><br>
+        checkbox : <input type="checkbox" name="myCheckbox" checked><br>
+        Radio: <input type="radio" name="myRadio"> Male
+        <input type="radio" name="myRadio"> Female <br>
+        Description : <textarea name="myText" cols="30" rows="10"></textarea><br>
+        <label for="select">Text</label>
+        <input type="text" id="select"><br>
+        Select : <select>
+            <option>Indica</option>
+            <option>Swift</option>
+        </select><br>
+        <input type="submit" value="Register"><br>
+        <input type="reset" value="Reset all">
+    </form>
+    <h2>Inline and block element</h2>
+    <p style="border: 2px solid red;">this is a paragraph</p>
+    <p style="border: 2px solid blue;">this is also a paragraph</p> <!-- <p> is block element (means it will take the entire width, any element that is next will be after it in next line)-->
+    <span style="border: 2px solid red;">this is a span</span>
+    <span style="border: 2px solid red;">this is also a span</span> <!-- <span> is inline element (means it will start in same line as any additional element will appear)-->
+    <h2>Ids and classes</h2>
+    <div id="maindBox" class="redBg blackBorder">ids and class</div>
+    <!-- ctrl + / for hide any element -->
+    <!-- put . before element for getting class and put # before element for getting id -->
+    <h2>Entities in html</h2>
+    <div class="box">
+        <p>this is a paragraph tag  &nbsp;&nbsp; &lt;p&gt;</p> <!--nbsp (non breaking space)-->
+        <p>this is pound &pound;</p>
+        <p>this is copyright &copy;</p>
+        <p>this is right arrow &rAarr;</p>
+        <p>this is a empty character &#2803 </p>
+    </div>
+    <h2>semantic element</h2>
+    <details><summary>a para</summary> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, error sapiente atque sint eos quia quasi officiis inventore accusantium dolore!</details>
+    <h2>css syntax</h2>
+    <p>selector&nbsp;&nbsp;&nbsp;&nbsp; property &nbsp;&nbsp;&nbsp;&nbsp; value </p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8659&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8659&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8659</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;color &nbsp;&nbsp;: &nbsp;&nbsp;blue&nbsp;; }</p>
+    <div id="css">
+        <h2>Css selectors</h2>
+        <p class="para one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque optio quia asperiores nostrum error corporis in fugit eligendi quam  incidunt?</p>
+    </div>
+    <div class="red one">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae est molestiae excepturi quis quo omnis at, obcaecati unde earum architecto, doloremque eius maiores. Nobis reprehenderit, fugit sequi ipsa omnis id!
+    </div>
+    <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus aspernatur placeat quae eius laboriosam quidem nulla quos, vero necessitatibus officia qui quam consequuntur distinctio maiores illum architecto impedit omnis.
+    </div>
+    <div class="orange">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas explicabo earum? Recusandae placeat cumque reiciendis nihil tempore inventore accusantium?</div>
+    <div class="green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste laudantium ratione magni explicabo perferendis cupiditate est! Autem earum voluptatibus impedit?
+    </div><br>
+    <h2>background</h2>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas voluptatum fuga quod eius et nemo at totam magni maxime ab consectetur, eveniet ipsum autem molestias. Laboriosam saepe provident fuga illum perferendis tenetur harum autem debitis nisi, fugit id labore consequuntur incidunt ex quis maiores praesentium sunt. Soluta eveniet non quaerat!
+    </div>
+    <h2>Box model</h2>
+    <div class="model">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus harum labore suscipit commodi recusandae officia asperiores voluptas. Inventore saepe atque culpa vitae qui, corporis minima nemo! Architecto dolorem magni doloremque?
+    </div>
+    <h2>display</h2>
+    <div class="box-1">Lorem ipsum dolor.</div>
+    <div class="box-2">Lorem ipsum dolor sit.</div>
+    <h2>line height</h2>
+    <div class="line-height">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque facilis aliquid quod ratione quidem possimus animi amet dolores ab sapiente?</div>
+    <h2>font</h2>
+    <div class="font">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit cumque, modi veniam dolore molestiae optio aliquid dolorem hic mollitia, magni facilis. Error sed, voluptatem cum dignissimos fugit in minus quasi!</div>
+    <h2>position</h2>
+    <div class="position">
+        <div class="position-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum praesentium laudantium eum rem nesciunt aperiam odit minima repudiandae neque maiores ad, voluptate commodi consectetur nihil ipsam earum! In, sint.</div>
+        <div class="position-2">I am a box.</div>
+    </div>
+    <h2>list style</h2>
+    <ul>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Apple</li>
+    </ul>
+    <h2>practice</h2>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <h2>flexbox</h2>
+    <div class="flexbox">
+        <div class="flex_1">ONE</div>
+        <div class="flex_2">TWO</div>
+        <div class="flex_2b">THREE</div>
+        <div class="flex_2c">FOUR</div>
+    </div>
+    <h2>grid</h2>
+    <div class="grid">
+        <div class="grid_1">ONE</div>
+        <div class="grid_2">TWO</div>
+        <div class="grid_3">THREE</div>
+        <div class="grid_4">FOUR</div>
+    </div>
+    <h2>transform 2D</h2>
+    <div class="transform_box">
+        <div class="transform">
+            <img src="/assets/javascript/Spiderman-logo.gif" alt="Spiderman-logo">
+        </div>
+    </div>
+    <h2>transform 3D</h2>
+    <div class="cover">
+        <div class="cover-in"></div>
+    </div>
+    <h2>css animation</h2>
+    <div class="anime-box">
+        <div class="anime"></div>
+    </div>
+    <h2>just4fun</h2>
+    <img class="arrow" src="/assets/miscellaneous/arrow.png" alt="arrow">
+    <h2>just4fun</h2>
+    <div class="anime_hover">
+        <img class="naruto" src="/assets/miscellaneous/itachi.jpg" alt="itachi">
+        <img class="naruto" src="/assets/miscellaneous/kakashi.jpg" alt="kakashi">
+        <img class="naruto" src="/assets/miscellaneous/naruto.png" alt="naruto">
+        <img class="naruto" src="/assets/miscellaneous/sasuke.jpg" alt="sasuke">
+        <img class="naruto" src="/assets/miscellaneous/jiraya.jfif" alt="jiraya">
+    </div>
+    <h2 class="anime_name"><p>Naruto</p></h2>
+    <h2>practice</h2>
+    <div class="big_box">
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+        <div class="small-box"></div>
+    </div>
+</body>
+</html>

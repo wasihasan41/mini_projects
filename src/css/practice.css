@@ -1,0 +1,37 @@
+#button{
+    color: red;
+    background-color: greenyellow;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px dotted red;
+}
+#text{
+    color: red;
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+.dice {
+    margin-bottom: 20px;
+}
+#ludo{
+    display: flex;
+}
+.row{
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+}
+.col{
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+}
+.active{
+    background-color: blue;
+}
+.color{
+    background-color: burlywood;
+}

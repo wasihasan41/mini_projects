@@ -1,0 +1,256 @@
+body{
+    width: 100%;
+    height: 1155px;
+    margin: 3px;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    height: 232px;
+}
+.name-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.name-icon > h1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    font-family: monospace;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+}
+.icon > i{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+.story{
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background-color: white;
+    
+    overflow: scroll
+}
+.story::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scr
+ollbar for IE, Edge and Firefox */
+.story {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.image-name{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    outline: 3px solid white; 
+}
+.image-name > p{
+    display: flex;
+    flex-direction: row;
+    font-family:sans-serif;
+    justify-content: center;
+}
+.image-container {
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+.ring {
+    background-image: linear-gradient(to bottom, deeppink, orange);
+    padding: 6px;
+}
+.image-icon{
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    width: 100px;
+    position: relative;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 20px;
+    border-color: deepskyblue;
+    background-color: deepskyblue;
+    border:  solid white;
+}
+.btn > i{
+    display: flex;
+    flex-direction: row;
+    color: white;    
+}
+.img-cntnt-icon{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+.cartoon{
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, deeppink, orange);
+    padding: 2px;
+}
+.flower{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.name-adrs{
+    display: flex;
+    flex-direction: column;
+}
+.name-adrs > p{
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    margin-left: 10px
+    }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.namendicon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-captions{
+    display: flex;
+    flex-direction: column;
+}
+.full-img{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+}
+.all-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 28px;
+}
+.likenshare{
+    display: flex;
+    flex-direction: row;
+}
+.likenshare >i{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+.bookmark{
+    display: flex;
+    flex-direction: row;
+}
+.bookmark > i{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;    
+}
+.comment-section{
+    font-size: 20px;
+}
+.comments{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+.IMAGE{
+    height: 50px;
+    width: 58px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.INPUT{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border: hidden;
+}
+.comments >i{
+    display: flex;
+    font-size: 20px;
+    margin-right: 10px;
+    align-items: center;
+}
+p1{
+    font-size: 18px;
+    color: darkgray
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    border-bottom: 1px hidden;
+}
+.nav > img{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+    

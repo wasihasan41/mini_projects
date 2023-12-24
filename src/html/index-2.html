@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" href="/src/css/index-2.css">
+</head>
+<body>
+    <div>
+    <h1><p>People Entered</p></h1>
+    <h3><p id="count-el">0</p></h3>
+    <button id="increment-btn" onclick="clicked()">INCREMENT</button> <br>
+    <button id="save-btn" onclick="save()">SAVE</button>
+    <p id="save-el"> Previous entries : </p>
+    <div id="line"></div><br>
+    <p id="welcome-El"></p>
+    </div>
+    <div id="line"></div><br>
+    <div>
+        <img src="image" alt="Adidas Shoes">
+        <p id="shoes">Adidas Shoes</p>
+        <button id="shoes-btn" onclick="shoes()" >PURCHASE - $149</button>
+        <p id="error"></p>
+    </div>
+    <div id="line"></div><br>
+    <div>
+        <div id="num">
+            <p id="num1"></p>
+            <p id="num2"></p>
+        </div>
+        <div id="shoe">
+            <button id="add" onclick="add()">ADD</button>
+            <button id="subtract" onclick="subtract()">subtract</button>
+            <button id="multiply" onclick=multiply()>multiply</button>
+            <button id="divide" onclick="divide()">divide</button>
+        </div>
+        <div id="sum"></div>
+    </div><br>
+    <div id="line"></div><br>
+    <div id="div">
+        <h1 class="head"><p>Blackjack</p></h1>
+        <p class="para" id="message-el">Want to play a round?</p>
+        <p class="para" id="card-el">Cards: </p>
+        <p class="para" id="sum-el">Sum: </p>
+        <button class="game-btn" onclick="startGame()">start game</button>
+        <button class="game-btn" onclick="NewCard()">new card</button>
+        <p id="player-el"></p>
+    </div><br>
+    <div id="line"></div><br>
+    <div id="input-div">
+        <input type="text" id="input-el">
+        <div id="button">
+            <button id="input-btn" onclick="input()" >SAVE INPUT</button>
+            <button id="tab-btn" onclick="tab()">SAVE TAB</button>
+            <button id="del-btn" onclick="deletee()" >DELETE ALL</button>
+        </div>
+        <ul id="ul-el"></ul>
+    </div>
+
+    <script src="/src/javascript/index-2.js"></script>
+</body>
+</html>
