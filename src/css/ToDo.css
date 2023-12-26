@@ -1,0 +1,65 @@
+.ToDo_List{
+    background-color: darkgoldenrod;
+    height: 100vh;
+    margin: -15px -5px auto -5px;
+}
+.name{
+    text-align: center;
+    padding-top: 10px;
+    font-size: x-large;
+    color: rgb(22, 105, 3);
+    font-weight: bold;
+    text-decoration: overline;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.input input{
+    width: 300px;
+    height: 30px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(22, 105, 3);
+    background-color: white;
+}
+.button button{
+    width: 50px;
+    height: 36px;
+    background-color: white;
+}
+.button button:hover{
+    cursor: grab;
+}
+
+.section{
+    color: wheat;
+}
+.content{
+    color: rgb(22, 105, 3);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+.remBtn{
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.remBtn:hover{
+    cursor: not-allowed;
+}
+.strike{
+    text-decoration: line-through;
+}
