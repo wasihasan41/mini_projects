@@ -59,7 +59,7 @@ console.log(x);
 // while(n>0){
 // rem = n%10;
 // console.log(rem);
-}
+//}
 
 // --- factorial ---
 // let num = prompt("enter a number");
@@ -144,3 +144,36 @@ console.log(x);
 //     }
 //     console.log("");
 // }
+
+
+
+// let promise =new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log("hello in 2 sec");
+//         resolve(56);
+//     }, 2000)
+// });
+// promise.then(function(value){
+//     console.log(value)
+// })
+
+
+
+
+setTimeout(function(){
+    console.log("3 second completed")
+},3000)
+
+setTimeout(function(){
+    console.log("6 second completed")
+},6000)
+try{
+    console.log(second);
+}catch(e){
+    console.log(e)
+}
+setTimeout(function(){
+    console.log("9 second completed")
+},9000)
+
+
