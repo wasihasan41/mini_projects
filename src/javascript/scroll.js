@@ -168,14 +168,14 @@ console.log(x);
 //   console.log("9 second completed");
 // }, 9000);
 
-// let num = 41;
-// try {
-//   if(num % 2 == 0){
-//     console.log(num)
-//   }
-// } catch (num) {
-//   console.log("invalid");
-// }
+try {
+  let num = 40;
+  if (num % 2 == 0) {
+    console.log("workin");
+  }
+} catch (err) {
+  console.log("invalid");
+}
 
 // console.log("message")
 // logger(); //it won't go ahead until the function is finished
@@ -227,3 +227,58 @@ async function getList() {
   }
 }
 getList();
+
+//___PROMISES___
+const promiseOne = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    console.log("Async task is completed");
+    resolve(); //we have to call this method for connecting it with .then
+  }, 1000);
+});
+
+promiseOne.then(function () {
+  console.log("promise consumed");
+});
+
+new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    console.log("Async task 2");
+    resolve();
+  }, 1000);
+}).then(function () {
+  console.log("async 2 resolved");
+});
+
+const promiseThree = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve({ username: "chai", email: "chai@example.com" });
+  }, 1000);
+});
+promiseThree.then(function (user) {
+  console.log(user);
+});
+
+const promiseFour = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = true;
+    if (!error) {
+      resolve({ username: "chai", password: "123" });
+    } else {
+      reject("spmething went wrong");
+    }
+  }, 1000);
+});
+promiseFour
+  .then(function (user2) {
+    console.log(user2);
+    return user2.password;
+  })
+  .then(function (password) {
+    console.log(password);
+  })
+  .catch(function (err) {
+    console.log(err);
+  })
+  .finally(function(){ //will happen always (default)
+    console.log("promise is either resolved or rejected") 
+  })
