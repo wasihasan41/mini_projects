@@ -1,53 +1,53 @@
 // document.designMode='on'; //can edit live on page
 //console.table(objName)  //showing object in table format
-function smoothScroll(target, duration) {
-  var target = document.querySelector(target);
-  var targetPosition = target.getBoundingClientRect().top;
-  console.log(targetPosition);
-}
-smoothScroll(".section1", 1000);
+// function smoothScroll(target, duration) {
+//   var target = document.querySelector(target);
+//   var targetPosition = target.getBoundingClientRect().top;
+//   console.log(targetPosition);
+// }
+// smoothScroll(".section1", 1000);
 
-const student = {
-  age: 72,
-  func: function () {
-    return this.age;
-  },
-};
-console.log(student.func());
+// const student = {
+//   age: 72,
+//   func: function () {
+//     return this.age;
+//   },
+// };
+// console.log(student.func());
 
-const obj1 = {
-  name: "obj1",
-  getThis() {
-    return this;
-  },
-};
-const obj2 = {
-  name: "obj2",
-};
-obj2.getThis = obj1.getThis;
-console.log(obj2.getThis);
+// const obj1 = {
+//   name: "obj1",
+//   getThis() {
+//     return this;
+//   },
+// };
+// const obj2 = {
+//   name: "obj2",
+// };
+// obj2.getThis = obj1.getThis;
+// console.log(obj2.getThis);
 
-const sentence = {
-  firstWord: "hello",
-  lastWord: "world",
-  fullWord: function () {
-    return this.firstWord + " " + this.lastWord;
-  },
-};
-console.log(sentence.fullWord());
+// const sentence = {
+//   firstWord: "hello",
+//   lastWord: "world",
+//   fullWord: function () {
+//     return this.firstWord + " " + this.lastWord;
+//   },
+// };
+// console.log(sentence.fullWord());
 
-const person1 = {
-  firstName: "wasi",
-  lastName: "hasan",
-};
+// const person1 = {
+//   firstName: "wasi",
+//   lastName: "hasan",
+// };
 
-const person2 = {
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
-const x = person2.fullName.apply(person1);
-console.log(x);
+// const person2 = {
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+// const x = person2.fullName.apply(person1);
+// console.log(x);
 
 // --- reverse ---
 // let rem =0 ;
@@ -168,14 +168,14 @@ console.log(x);
 //   console.log("9 second completed");
 // }, 9000);
 
-try {
-  let num = 40;
-  if (num % 2 == 0) {
-    console.log("workin");
-  }
-} catch (err) {
-  console.log("invalid");
-}
+// try {
+//   let num = 40;
+//   if (num % 2 == 0) {
+//     console.log("workin");
+//   }
+// } catch (err) {
+//   console.log("invalid");
+// }
 
 // console.log("message")
 // logger(); //it won't go ahead until the function is finished
@@ -216,69 +216,313 @@ try {
 //   console.log(data);
 // });
 
-async function getList() {
-  try {
-    const data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
-    console.log(data);
-    const JSON = await data.json();
-    console.log(JSON);
-  } catch (err) {
-    console.log("please ensure u have established a internet conncetion");
-  }
-}
-getList();
+// async function getList() {
+//   try {
+//     const data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//     console.log(data);
+//     const JSON = await data.json();
+//     console.log(JSON);
+//   } catch (err) {
+//     console.log("please ensure u have established a internet conncetion");
+//   }
+// }
+// getList();
+
+// //___PROMISES___
+// const promiseOne = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     console.log("Async task is completed");
+//     resolve(); //we have to call this method for connecting it with .then
+//   }, 1000);
+// });
+
+// promiseOne.then(function () {
+//   console.log("promise consumed");
+// });
+
+// new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     console.log("Async task 2");
+//     resolve();
+//   }, 1000);
+// }).then(function () {
+//   console.log("async 2 resolved");
+// });
+
+// const promiseThree = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     resolve({ username: "chai", email: "chai@example.com" });
+//   }, 1000);
+// });
+// promiseThree.then(function (user) {
+//   console.log(user);
+// });
+
+// const promiseFour = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     let error = true;
+//     if (!error) {
+//       resolve({ username: "chai", password: "123" });
+//     } else {
+//       reject("spmething went wrong");
+//     }
+//   }, 1000);
+// });
+// promiseFour
+//   .then(function (user2) {
+//     console.log(user2);
+//     return user2.password;
+//   })
+//   .then(function (password) {
+//     console.log(password);
+//   })
+//   .catch(function (err) {
+//     console.log(err);
+//   })
+//   .finally(function(){ //will happen always (default)
+//     console.log("promise is either resolved or rejected")
+//   })
+
+// ___FreeCodeCamp___
+
+//synchronous
+
+// console.log("I ");
+
+// console.log("eat ");
+
+// console.log("ice cream ");
+
+// console.log("with a ");
+
+// console.log("spoon ");
+
+//Asynchronous
+
+//function abc(a, b){...};   //regular function
+//let abc=(a, b)=>{...};    //arrow function
+
+// console.log("I ");
+
+// console.log("eat ");
+
+// setTimeout(() => {
+//   console.log("ice cream ");
+// }, 4000);
+
+// console.log("with a ");
+
+// console.log("spoon ");
+
+//CAllbacks
+
+//calling  FUNCITON inside another function
+
+// function one(call_2) {
+//   call_2();
+//   console.log("step 1");
+// }
+// function two() {
+//   console.log("step 2");
+// }
+// one(two);
+
+let stock = {
+  fruits: ["strawberry", "grapes", "banana", "apple"],
+  liquid: ["water", "ice"],
+  holder: ["cone", "cup", "stick"],
+  toping: ["chocolate", "peanut"],
+};
+//call back hell
+
+// let order = (fruit_name, call_production) => {
+//   setTimeout(() => {
+//     console.log(`${stock.fruits[fruit_name]} was selected`);
+//     call_production();
+//   }, 2000);
+// };
+// let production = () => {
+//   setTimeout(() => {
+//     console.log("prouction has started");
+
+//     setTimeout(() => {
+//       console.log("The fruit has been chopped");
+
+//       setTimeout(() => {
+//         console.log(`${stock.liquid[0]} and ${stock.liquid[1]} was added`);
+
+//         setTimeout(() => {
+//           console.log("the machine was started");
+
+//           setTimeout(() => {
+//             console.log(`ice cream was placed on ${stock.holder[0]}`);
+
+//             setTimeout(() => {
+//               console.log(`${stock.toping[0]} was added as toppings`);
+
+//               setTimeout(() => {
+//                 console.log("serve ice cream");
+//               }, 2000);
+//             }, 3000);
+//           }, 2000);
+//         }, 1000);
+//       }, 1000);
+//     }, 2000);
+//   }, 0000);
+// };
+
+// order("0", production);
 
 //___PROMISES___
-const promiseOne = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    console.log("Async task is completed");
-    resolve(); //we have to call this method for connecting it with .then
-  }, 1000);
-});
+let is_shop_open = true;
 
-promiseOne.then(function () {
-  console.log("promise consumed");
-});
+//___PROMISES___
 
-new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    console.log("Async task 2");
-    resolve();
-  }, 1000);
-}).then(function () {
-  console.log("async 2 resolved");
-});
+// let order = (time, work) => {
+//   return new Promise((resolve, reject) => {
+//     if (is_shop_open) {
+//       setTimeout(() => {
+//         resolve(work());
+//       }, time);
+//     } else {
+//       reject(console.log("our shop is closed"));
+//     }
+//   });
+// };
+// order(2000, () => console.log(`${stock.fruits[0]} was selected`))
+//   .then(() => {
+//     return order(0000, () => console.log("production has started")); //must use return keyword and don't use semi colons before using then keyword for chaining
+//   })
 
-const promiseThree = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    resolve({ username: "chai", email: "chai@example.com" });
-  }, 1000);
-});
-promiseThree.then(function (user) {
-  console.log(user);
-});
+//   .then(() => {
+//     return order(2000, () => console.log("the fruit was chopped"));
+//   })
 
-const promiseFour = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    let error = true;
-    if (!error) {
-      resolve({ username: "chai", password: "123" });
+//   .then(() => {
+//     return order(1000, () =>
+//       console.log(`${stock.liquid[0]} and ${stock.liquid[1]} was selected`)
+//     );
+//   })
+
+//   .then(() => {
+//     return order(1000, () => console.log("start the machine"));
+//   })
+
+//   .then(() => {
+//     return order(2000, () =>
+//       console.log(`ice cream placed on ${stock.holder[0]}`)
+//     );
+//   })
+
+//   .then(() => {
+//     return order(3000, () => console.log(`${stock.toping[0]} was selected`));
+//   })
+
+//   .then(() => {
+//     return order(2000, () => console.log("ice cream was served"));
+//   })
+
+//   .catch(() => {
+//     console.log("customer left");
+//   })
+
+//   .finally(() => console.log("Day ended , shop is closed"));
+
+// ___PROMISE SYNTAX___
+// let order = ()=>{
+//   return new Promise ((resolve, reject)=>{
+//     if(true){
+//       resolve()
+//     }
+//     else{
+//       reject()
+//     }
+//   })
+// }
+
+// order() //
+// .then() //      if resolved
+// .then() //      "
+// .then() //      "
+// .catch()  //    if rejected
+// .finally()  //  in both
+
+//  ___ASYNC AWAIT SYNTAX___
+// async function order (){
+//   try{
+//     await abc;
+//     }
+//     catch(error){
+//       console.log("abc doesnt exist", error);
+//     }
+//     finally{
+//       console.log("runs code anyways")
+//     }
+//   }
+// order().then(()=>console.log("qwerty")) //u can use finally and catch targetPosition
+
+// let toppings_choice = (()=>{
+//  return new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//     resolve(
+//       console.log("which topping would you love?")
+//     );
+//   }, 3000)
+//  })
+// })
+
+// async function kitchen(){
+//   console.log("a")
+//   console.log("b")
+//   console.log("c")
+//   await toppings_choice()
+//   console.log("d")
+//   console.log("e")
+// }
+// kitchen();
+// console.log("doing the dishes")
+// console.log("cleaning the tables")
+// console.log("taking the order")
+
+function time(ms) {
+  return new Promise((resolve, reject) => {
+    if (is_shop_open) {
+      setTimeout(resolve, ms);
     } else {
-      reject("spmething went wrong");
+      reject(console.log("shop is closed"));
     }
-  }, 1000);
-});
-promiseFour
-  .then(function (user2) {
-    console.log(user2);
-    return user2.password;
-  })
-  .then(function (password) {
-    console.log(password);
-  })
-  .catch(function (err) {
-    console.log(err);
-  })
-  .finally(function(){ //will happen always (default)
-    console.log("promise is either resolved or rejected") 
-  })
+  });
+}
+
+async function kitchen() {
+  try {
+    await time(2000);
+    console.log(`${stock.fruits[1]} was selected`);
+
+    await time(0000);
+    console.log("start the production");
+
+    await time(2000);
+    console.log("cut the fruit");
+
+    await time(1000);
+    console.log(`${stock.liquid[0]} and ${stock.liquid[1]} was added `);
+
+    await time(1000);
+    console.log("start the machine");
+
+    await time(2000);
+    console.log(`ice creaam placed on ${stock.holder[0]}`);
+
+    await time(3000);
+    console.log(`${stock.toping[0]} was selected `);
+
+    await time(1000);
+    console.log("serve ice cream");
+  } catch (error) {
+    console.log("customer left", error);
+  } finally {
+    console.log("day ended, shop is closed");
+  }
+}
+kitchen();
