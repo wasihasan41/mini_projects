@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Buttons</title>
+    <style>
+        .order-css {
+            border: none;
+            background-color: red;
+            color: white;
+            padding: 10px 15px 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .order-css:hover {
+            cursor: pointer;
+        }
+
+        .subscribed {
+            background-color: whitesmoke;
+            color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+    <p>Youtube Subscribe Button </p><br>
+    <button class="order-css" onclick="change()">Subscribe</button>
+
+
+    <p>Amazon Shipping Calculator</p>
+    <p>orders under 40rs = +10rs Shipping</p>
+    <p>orders over 50rs = free Shipping</p>
+    <input type="number" placeholder="Cost Of Order" onkeydown="enterKey(event)">
+    <button onclick="calculate()">Calculate</button>
+    <p class="cost"></p>
+
+
+    <p>Todo List Practice 1</p>
+    <input class="input" type="text" placeholder="Todo name">
+    <button class="button" onclick="addList()">Add</button>
+    <p class="Text"></p>
+
+
+    <!-- <button>hello</button> -->
+    <!-- <button>hello</button> -->
+    <!-- <p>Rock Paper Scissor</p>
+    <button onclick="
+    alert(`You picked rock. computer picked ${randomNumber}. `)
+    ">
+        Rock</button>
+    <button onclick="
+    alert(`You picked rock. computer picked ${randomNumber}. `)
+    ">Paper</button>
+    <button onclick="
+    alert(`You picked rock. computer picked ${randomNumber}. `)
+    ">Scissor</button> -->
+
+
+    <script>
+
+        // import hello from 'https://unpkg.com/supersimpledev@1.0.1/hello.esm.js';
+
+        const orderCost = document.querySelector('input')
+        const calcButton = document.querySelector('button')
+        const Cost = document.querySelector('.cost')
+        function enterKey(event) {
+            if (event.key === 'Enter') {
+                calculate();
+            }
+        }
+        function calculate() {
+            let price = Number(orderCost.value);
+            if (price < 40) {
+                price = price + 10;
+            };
+            Cost.innerHTML = price;
+            if (price > 50) {
+                price = price;
+            };
+            Cost.innerHTML = price
+        }
+
+        const btn = document.querySelector('button')
+        function change() {
+            if (btn.innerText === "Subscribe") {
+                btn.innerText = "Subscribed"
+            } else {
+                btn.innerText = "Subscribe"
+            }
+            btn.classList.toggle("subscribed");
+        }
+
+
+        let arr = [];
+        function addList() {
+            const listBtn = document.querySelector('.button');
+            const List = document.querySelector('.input');
+            const text = document.querySelector('.Text');
+            let listValue = List.value
+            arr.push(listValue);
+            text.innerHTML += listValue;
+            console.log(listValue);
+            List.value = ""
+        }
+
+        function regularfunc() {
+            console.log('hello')
+        }
+        regularfunc();
+
+        const regularfunc1 = () => {
+            console.log('hello')
+        }
+        regularfunc1(); //in arrow func when we have one para we can remove brackets and if have one line code we can remove curly brackets also
+
+
+
+        const nums = [1, 1, 3];
+        let total = 0;
+        for (let i = 0; i < nums.length; i++) {
+            let elem = nums[i];
+            total += nums;
+        }
+        console.log(total)
+
+        // setTimeout(function () {
+        //     console.log('timeout');
+        // }, 3000)
+
+        // setInterval(function () {
+        //     console.log('interval');
+        // }, 3000)
+
+        // document.body.innerHTML="<button>gg</button>"
+        // document.querySelector('button')
+        // let rock;
+        // let paper;
+        // let scissor;
+        // let win;
+        // let lose;
+        // let randomNumber = Math.floor(Math.random())
+        // if (randomNumber == 0) {
+        //     rock == 0;
+        // }
+        // if (randomNumber == 1) {
+        //     paper == 1;
+        // }
+        // if (randomNumber == 2) {
+        //     scissor == 2
+        // };
+
+        // function calcTax(amt, tax) {
+        //     console.log(amt * tax);
+        // }
+        // calcTax(2000, 0.2);
+
+        // function greet(name = "hi") {
+        //     console.log(`hello ${name}`)
+        // };
+        // greet();
+
+        // const data = {
+        //     name: "adil",
+        //     age: 20,
+        //     gender: "male"
+        // }
+        // delete data.gender;
+        // console.log(data);
+
+        // console.log(data.name); //dot notation
+        // console.log(data['name']); //bracket notation
+
+        //function inside object called method
+        //console.log() ; where console is object and log is function
+        // so console.log is basically a method
+
+
+        // built-in objects:
+
+        //1.json is universal and can be used in almost all prog langs , but contains less data
+        //json.stringify : to convert js object to json
+        // and json.parse : vice-versa
+
+        //2.local storage: stores data perma
+        //localStorage.setItem(2 parameter, 1: name 2: value (must be string only))
+        //localStorage.getItem(1)
+
+        //when copy one object into other it copy reference only also called copy by reference and thats why we can use const in object and still chnage the values of a property as we are changing the reference or copying reference not the object
+
+        //if we want to store object property to a variable with both same name we can use destructuring(easy way to take prop out of obj)
+        //cost msg = obj.msg //instead do 
+        //const {msg} = obj
+
+        //functions are values and we can save them in variables too
+
+        //preferred forEach loop to loop through an array takes two para 1st value 2nd index
+
+        //use .. to get out of a folder wile giving paths and . for selecting file within same folder path
+
+        const array = [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ].forEach(function (value, index) {
+            if (value === 'wash dishes') {
+                return; //will work as same like continue in for loop also we cant break loop tho for loop will be preferred for this case
+            }
+            console.log(value);
+            console.log(index);
+        });
+
+        const array1 = [
+            'make dinner',
+            'wash dishes',
+            'watch youtube'
+        ].forEach((value, index) => {
+            console.log(value);
+            console.log(index);
+        });
+
+
+        class Hello {
+            name;
+            age;
+            gender;
+            class;
+
+            constructor() {
+                this.name = 'name';
+                this.age = 'age';
+                this.gender = 'gender';
+                this.class = 'class';
+            }
+        }
+
+
+        const xyz = new Hello();
+        const abc = new Hello();
+        xyz.name = 'adil';
+        abc.name = 'aman'
+        console.log(xyz)
+        console.log(abc)
+
+        //this lets an object use its own properties //we can use it also in function and can set this to whatever we want inside a function // use call to put the value of this if wants to
+        //class xyz extends abc //   this means abc inherits all properties of xyz //its uses inheritance( lets us reuse code between classes) //use super() to call constructor of the parent class
+
+
+        // const xhr = new XMLHttpRequest();
+        // xhr.addEventListener('load', () =>{
+        //     console.log(xhr.response);
+        // })
+        // xhr.open('GET', 'https://www.weather.org'); 
+        // xhr.send();
+
+
+        function learnFetch() {
+            fetch('hdjsckj').then((response) => {
+                console.log(response)
+            }); //to send data in request, there are four types of request:
+            //get = to get something, post = create/send something, put = update something, delete = delete something 
+        }
+        learnFetch()
+
+        new Promise((resolve) => {
+            console.log(Promise) //this will auto run just after creating promise
+            setTimeout(() => {
+                console.log('hello')
+                resolve('hi') //async code here 
+                //only if it will done then the next code will run and without resolve it won't
+            }, 5000)
+        }).then((text) => { //the param in resolve will be reflected in the param of .then
+
+            console.log(text)
+            console.log('5 secs done')
+        })
+
+
+        function name(callback) {
+            console.log('wasi');
+            callback();
+        }
+        function age() {
+            console.log('20')
+        }
+        function data(callback) {
+            console.log('your name');
+            callback();
+        }
+        data(() => {
+            name(() => {
+                age();
+            });
+        });// call back function passed as an argument to another function
+        //when having many nested callbacks function this will lead to callback hell
+
+
+        async function loadPage() { //this function will now return promise 
+            console.log('load page')
+            return '...'  //it works as it does in resolve in promise .then will get the value of this as a parameter
+        }
+        loadPage().then((e) => {
+            console.log(e)
+            console.log('loaded')
+        }) // use .catch for hanldng error in promises
+
+
+        function wait() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log('6 secs completed ');
+                    resolve()
+                }, 6000)
+            })
+
+        }
+        async function pageLoad() {
+            await wait(); //async await works only with promise and closes function must be async
+            //we can return the value of resolve by storing the value inside a varaible for await instead of using .then
+        }
+        pageLoad().then(() => {
+            console.log('page load');
+        }); //use try catch for handling errors also and whenever we get an error in try blockk it will skip all codes of try block 
+        //we can manually create errors using throw in try block
+
+
+
+
+    </script>
+
+</body>
+
+</html>
