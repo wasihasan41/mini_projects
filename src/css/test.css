@@ -1,19 +1,24 @@
 .container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .container-1 {
+  font-size: 20px;
+  font-weight: 600;
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
-  border: 1px solid yellow;
+  width: 400px;
+  border: 2px solid yellow;
+  margin-bottom: 100px;
 
 }
 
 .box {
   display: flex;
-  height: 2em;
+  height: 3em;
   width: 16.6%;
   border: 1px solid black;
   align-items: center;
@@ -30,14 +35,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  line-height: 3;
 
-}
-
-.randomNumber {
-  color: orange;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 Button {
@@ -48,3 +47,17 @@ Button {
   font-weight: bold;
   border-radius: 20px;
 }
+
+/* [data-number^="3"]{
+  //starts with 3 
+  background-color: blueviolet;
+}
+*/
+/* [data-number$="3"]{
+  // ends with 3 
+  background-color: blueviolet;
+} */
+/* [data-number*="3"]{
+  //contains 3
+  background-color: blueviolet;
+} */
